@@ -28,15 +28,31 @@
   <!-- Hero -->
   <header id="home" class="hero">
     <div class="container hero-content">
-      <p class="eyebrow">Computer Science & Engineering Graduate</p>
-      <h1>Building real systems.<br />Open to learning any path.</h1>
-      <p class="hero-sub">
-        Final-year CSE graduate (CGPA 3.50) with hands-on work across mobile apps, machine learning, Linux systems, networking, and databases. 
-        Looking for a CSE / IT internship where I can contribute and grow — in any domain that needs solid fundamentals and a fast learner.
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="https://github.com/Arafathossain101" target="_blank" rel="noopener" class="btn secondary">GitHub Profile</a>
+      <!-- Profile Photo Placeholder -->
+      <div class="hero-photo">
+        <img 
+          src="profile.jpg" 
+          alt="Arafat Hossain" 
+          class="profile-img"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <div class="photo-placeholder" style="display: none;">
+          <span>Your Photo</span>
+          <small>Add profile.jpg</small>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="eyebrow">Computer Science & Engineering Graduate</p>
+        <h1>Building real systems.<br />Open to learning any path.</h1>
+        <p class="hero-sub">
+          BSc in CSE graduate awaiting degree certificate/transcript (CGPA 3.50) with hands-on work across mobile apps, machine learning, Linux systems, networking, and databases. 
+          Looking for a CSE / IT internship where I can contribute and grow in any domain that needs solid fundamentals and a fast learner.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="https://github.com/Arafathossain101" target="_blank" rel="noopener" class="btn secondary">GitHub Profile</a>
+        </div>
       </div>
     </div>
   </header>
@@ -84,38 +100,33 @@
       <div class="projects-grid">
         <!-- Project 1 -->
         <article class="project-card">
-          <div class="project-tag">Mobile</div>
-          <h3>Animal Rescue</h3>
-          <p>Flutter mobile application built for the feline / pet-loving community. Focus on practical user flows and community features.</p>
-          <div class="tech-list">
-            <span>Flutter</span><span>Dart</span>
-          </div>
-          <a href="https://github.com/Arafathossain101/Animal-Rescue" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="project-card">
           <div class="project-tag">Mobile + PropTech</div>
           <h3>Rent-due (Rent Record)</h3>
           <p>Lightweight Flutter app for landlords: manage properties, track tenants, log rent & utility payments, and keep clean payment histories.</p>
           <div class="tech-list">
             <span>Flutter</span><span>Dart</span>
           </div>
-          <a href="https://github.com/Arafathossain101/Rent-due" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+          <div class="project-links">
+            <a href="https://github.com/Arafathossain101/Rent-due" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            <a href="https://drive.google.com/file/d/19_L24CEOF4uXEew-QLrjBzmBwXH1VCJJ/view?usp=drivesdk" target="_blank" rel="noopener" class="project-link">Preview of the App →</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-tag">Mobile</div>
+          <h3>Animal Rescue</h3>
+          <p>Flutter mobile application built with Firebase Free tier as backend for the feline / pet-loving community. Focus on practical user flows and community features.</p>
+          <div class="tech-list">
+            <span>Flutter</span><span>Dart</span><span>Firebase</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Arafathossain101/Animal-Rescue" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            <a href="https://drive.google.com/file/d/1ka9E61LBl_7crk_LUN3ENIiMbJOiESYu/view?pli=1" target="_blank" rel="noopener" class="project-link">Preview of the App →</a>
+          </div>
         </article>
 
         <!-- Project 3 -->
-        <article class="project-card">
-          <div class="project-tag">Machine Learning</div>
-          <h3>Agaricus Name Encoding</h3>
-          <p>Machine learning model that identifies mushroom species from features. Includes data preprocessing, encoding, model training, and accuracy evaluation.</p>
-          <div class="tech-list">
-            <span>Python</span><span>scikit-learn</span><span>Joblib</span>
-          </div>
-          <a href="https://github.com/Arafathossain101/Agaricus-name-encoding-ml" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-        </article>
-
-        <!-- Project 4 -->
         <article class="project-card">
           <div class="project-tag">Systems / Linux</div>
           <h3>Samba Server Manager</h3>
@@ -123,7 +134,24 @@
           <div class="tech-list">
             <span>Python</span><span>Linux</span><span>Samba</span>
           </div>
-          <a href="https://github.com/Arafathossain101/Samba-server" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+          <div class="project-links">
+            <a href="https://github.com/Arafathossain101/Samba-server" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            <a href="https://drive.google.com/file/d/1tFfDN1TL1MxGt6SnkJmYlV6SiqF3Fkf3/view?usp=sharing" target="_blank" rel="noopener" class="project-link">Preview of the Project →</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-tag">Machine Learning</div>
+          <h3>Mushroom Edibility Classifier</h3>
+          <p>Machine learning model that identifies mushroom edibility from features. Includes data preprocessing, encoding, model training, and accuracy evaluation.</p>
+          <div class="tech-list">
+            <span>Python</span><span>scikit-learn</span><span>Joblib</span><span>Streamlit</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Arafathossain101/Agaricus-name-encoding-ml" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            <a href="https://mushroom-edibility-classification-ml-ndzazwixwenxgux4dfwgrw.streamlit.app/" target="_blank" rel="noopener" class="project-link">Model Preview →</a>
+          </div>
         </article>
 
         <!-- Project 5 -->
@@ -134,7 +162,9 @@
           <div class="tech-list">
             <span>Python</span><span>SQLite</span>
           </div>
-          <a href="https://github.com/Arafathossain101/Restraunt-management-system---DBMS-LAB-PROJECT" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+          <div class="project-links">
+            <a href="https://github.com/Arafathossain101/Restraunt-management-system---DBMS-LAB-PROJECT" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+          </div>
         </article>
 
         <!-- Project 6 -->
@@ -206,7 +236,7 @@
           <span class="value">Hossain15-6489@s.diu.edu.bd</span>
         </a>
         <a href="tel:+8801890776463" class="contact-item">
-          <span class="label">Phone</span>
+          <span class="label">Phone / WhatsApp</span>
           <span class="value">+880 1890 776463</span>
         </a>
         <a href="https://github.com/Arafathossain101" target="_blank" rel="noopener" class="contact-item">
